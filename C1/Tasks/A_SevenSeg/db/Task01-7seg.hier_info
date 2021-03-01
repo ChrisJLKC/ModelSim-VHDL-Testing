@@ -1,0 +1,86 @@
+|task01
+A <= led[0].DB_MAX_OUTPUT_PORT_TYPE
+RESET => seven_seg_decode:U1.reset
+RESET => binary_counter:U2.reset
+EN => seven_seg_decode:U1.en
+CLK => binary_counter:U2.clk
+COUNT_EN => binary_counter:U2.enable
+B <= led[1].DB_MAX_OUTPUT_PORT_TYPE
+C <= led[2].DB_MAX_OUTPUT_PORT_TYPE
+D <= led[3].DB_MAX_OUTPUT_PORT_TYPE
+E <= led[4].DB_MAX_OUTPUT_PORT_TYPE
+F <= led[5].DB_MAX_OUTPUT_PORT_TYPE
+G <= led[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|task01|seven_seg_decode:U1
+input[0] => Mux0.IN19
+input[0] => Mux1.IN19
+input[0] => Mux2.IN19
+input[0] => Mux3.IN19
+input[0] => Mux4.IN19
+input[0] => Mux5.IN19
+input[0] => Mux6.IN19
+input[1] => Mux0.IN18
+input[1] => Mux1.IN18
+input[1] => Mux2.IN18
+input[1] => Mux3.IN18
+input[1] => Mux4.IN18
+input[1] => Mux5.IN18
+input[1] => Mux6.IN18
+input[2] => Mux0.IN17
+input[2] => Mux1.IN17
+input[2] => Mux2.IN17
+input[2] => Mux3.IN17
+input[2] => Mux4.IN17
+input[2] => Mux5.IN17
+input[2] => Mux6.IN17
+input[3] => Mux0.IN16
+input[3] => Mux1.IN16
+input[3] => Mux2.IN16
+input[3] => Mux3.IN16
+input[3] => Mux4.IN16
+input[3] => Mux5.IN16
+input[3] => Mux6.IN16
+reset => output[0]$latch.ACLR
+reset => output[1]$latch.ACLR
+reset => output[2]$latch.ACLR
+reset => output[3]$latch.ACLR
+reset => output[4]$latch.ACLR
+reset => output[5]$latch.ACLR
+reset => output[6]$latch.ACLR
+en => output[0]$latch.LATCH_ENABLE
+en => output[1]$latch.LATCH_ENABLE
+en => output[2]$latch.LATCH_ENABLE
+en => output[3]$latch.LATCH_ENABLE
+en => output[4]$latch.LATCH_ENABLE
+en => output[5]$latch.LATCH_ENABLE
+en => output[6]$latch.LATCH_ENABLE
+output[0] <= output[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= output[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= output[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= output[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|task01|binary_counter:U2
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+reset => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+enable => cnt.OUTPUTSELECT
+q[0] <= cnt[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= cnt[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= cnt[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= cnt[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

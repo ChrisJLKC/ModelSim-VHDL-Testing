@@ -157,7 +157,7 @@ BEGIN
 	report "Test Failed for output of F" severity error;
 
 	input <= "1111";
-	en <= '0';
+	en <= '1';
 	reset <= '1';
 	wait for period;
 	assert (output = "0000000")
