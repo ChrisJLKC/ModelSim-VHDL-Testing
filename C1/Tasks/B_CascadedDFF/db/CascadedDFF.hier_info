@@ -1,0 +1,39 @@
+|top_level
+Y <= elec241_shift_register:inst.data_out
+CLK => elec241_shift_register:inst.clk
+EN => elec241_shift_register:inst.enable
+DAT => elec241_shift_register:inst.data_in
+
+
+|top_level|elec241_shift_register:inst
+clk => d_flip_flop:U1.CLK
+clk => d_flip_flop:U2.CLK
+clk => d_flip_flop:U3.CLK
+enable => d_flip_flop:U1.EN
+enable => d_flip_flop:U2.EN
+enable => d_flip_flop:U3.EN
+data_in => d_flip_flop:U1.D
+data_out <= d_flip_flop:U3.Y
+
+
+|top_level|elec241_shift_register:inst|d_flip_flop:U1
+CLK => Y~reg0.CLK
+EN => Y~reg0.ENA
+D => Y~reg0.DATAIN
+Y <= Y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_level|elec241_shift_register:inst|d_flip_flop:U2
+CLK => Y~reg0.CLK
+EN => Y~reg0.ENA
+D => Y~reg0.DATAIN
+Y <= Y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_level|elec241_shift_register:inst|d_flip_flop:U3
+CLK => Y~reg0.CLK
+EN => Y~reg0.ENA
+D => Y~reg0.DATAIN
+Y <= Y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

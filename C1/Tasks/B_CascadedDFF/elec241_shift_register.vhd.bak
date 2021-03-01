@@ -7,6 +7,8 @@ use ieee.numeric_std.all;
 
 entity elec241_shift_register is
 
+	generic ( NUM_STAGES : natural := 4);
+
 	port ( clk,enable,data_in : in std_logic; data_out : out std_logic);
 
 end entity;
