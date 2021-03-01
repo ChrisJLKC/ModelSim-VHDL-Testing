@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg
+Eseven_seg_decode
+Z1 w1614607708
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/seven_seg_decode.vhd
+Z5 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/seven_seg_decode.vhd
+l0
+L11
+V`J]IJ[SgeiV`b_iD0MOll0
+!s100 UZ3EeeF7^=F=cOWaGoW461
+Z6 OV;C;10.5b;63
+32
+Z7 !s110 1614611875
+!i10b 1
+Z8 !s108 1614611875.000000
+Z9 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/seven_seg_decode.vhd|
+Z10 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/seven_seg_decode.vhd|
+!i113 1
+Z11 o-work work
+Z12 tExplicit 1 CvgOpt 0
+Av1
+R2
+R3
+DEx4 work 16 seven_seg_decode 0 22 `J]IJ[SgeiV`b_iD0MOll0
+l24
+L22
+VKb3M?zS5Jkh2ATcVgkgTE1
+!s100 R9cBfnI[Jl]za^ET6Ck2H0
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eseven_seg_decode_logic
+Z13 w1614614704
+R2
+R3
+R0
+Z14 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/seven_seg_decode_logic.vhd
+Z15 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/seven_seg_decode_logic.vhd
+l0
+L4
+V4MT]6H7HIm0]cVUg]6Kn^0
+!s100 <oaCh@mB<KK4zTOW3Zm4L0
+R6
+32
+Z16 !s110 1614614717
+!i10b 1
+Z17 !s108 1614614717.000000
+Z18 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/seven_seg_decode_logic.vhd|
+Z19 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/seven_seg_decode_logic.vhd|
+!i113 1
+R11
+R12
+Av1
+R2
+R3
+DEx4 work 22 seven_seg_decode_logic 0 22 4MT]6H7HIm0]cVUg]6Kn^0
+l17
+L15
+V9=UKRH8<QSQ3NX9O6mgzb1
+!s100 jzPI4ReT5zAjL;Bl9]e=J3
+R6
+32
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Eseven_seg_decode_vhd_tst
+Z20 w1614614312
+R2
+R3
+R0
+Z21 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/simulation/modelsim/seven_seg_decode.vht
+Z22 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/simulation/modelsim/seven_seg_decode.vht
+l0
+L4
+VFK4;?0YZSKLjL=BFM]M]=3
+!s100 nB`cG<]9hIYc@WDoPM;Uk2
+R6
+32
+Z23 !s110 1614614318
+!i10b 1
+Z24 !s108 1614614318.000000
+Z25 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/simulation/modelsim/seven_seg_decode.vht|
+Z26 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/A_SevenSeg/simulation/modelsim/seven_seg_decode.vht|
+!i113 1
+R11
+R12
+Aseven_seg_decode_arch
+R2
+R3
+DEx4 work 24 seven_seg_decode_vhd_tst 0 22 FK4;?0YZSKLjL=BFM]M]=3
+l24
+L7
+VQFiADSF[Gh6<]0dZ[No`j3
+!s100 K<1aR^Xm9Pz3TF=9hCMcY1
+R6
+32
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
