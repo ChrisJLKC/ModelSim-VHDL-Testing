@@ -22,3 +22,5 @@ And the test file:
 Example of this system (When a button is pressed):
 
 ![image](https://user-images.githubusercontent.com/49998052/110130124-9ad86d80-7dc0-11eb-8a50-02ab4d869277.png)
+
+Also if you wanted to improve, the use of the generate variable can allow multiple of the same component in the same line. Link to website: https://www.ics.uci.edu/~jmoorkan/vhdlref/generate.html
