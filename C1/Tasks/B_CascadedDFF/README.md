@@ -17,6 +17,8 @@ And the test file:
 
 ![image](https://user-images.githubusercontent.com/49998052/110129924-65338480-7dc0-11eb-852e-4ce19ccc8bb3.png)
 
+(This has more to it in the same location as the last task, as elec241_shift_register_test.vht)
+
 Example of this system (When a button is pressed):
 
 ![image](https://user-images.githubusercontent.com/49998052/110130124-9ad86d80-7dc0-11eb-8a50-02ab4d869277.png)
