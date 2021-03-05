@@ -17,8 +17,18 @@ BEGIN
 	tb1 : process
 		constant period: time := 20 ps;
 		begin
-		
-	
+			CLK <= '0';
+			DATA_IN <= '0';
+			EN <= '0';
+			wait for period;
+			assert (DATA_OUT = 'U')
+			report "Test Failed for Startup" severity error;
 
-
+			CLK <= '1';
+			DATA_IN <= '1';
+			EN <= '0';
+			wait for period;
+			assert (DATA_OUT = 'U')
+			report "Test failed for Applied Input 1" severity error;		
+		end process;
 END v1;
