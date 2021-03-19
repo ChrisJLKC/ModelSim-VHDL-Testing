@@ -1,0 +1,101 @@
+-- write your test bench here
+LIBRARY ieee;                                               
+USE ieee.std_logic_1164.all;                                
+
+ENTITY elec241_shift_register_test IS
+END elec241_shift_register_test;
+
+ARCHITECTURE v1 OF elec241_shift_register_test IS
+	-- Time of period of each variable of test
+	constant period : time := 20 ps;
+	-- To stop the CLK
+	signal i : integer := 0;
+	
+	-- Inputs of device
+	signal CLK, EN, DATA_IN : std_logic;
+	-- Outputs of device
+	signal DATA_OUT : std_logic;
+BEGIN
+	-- Allowing testbech signals to be applied to the componenet elec241_shift_register.vhd
+	UUT : entity work.elec241_shift_register port map (clk => CLK, enable => EN, data_in => DATA_IN, data_out => DATA_OUT);
+
+	-- Clock output
+	process 
+	begin
+		CLK <= '0';
+		wait for period;
+		CLK <= '1';
+		wait for period;
+		
+		-- To stop the CLK
+		if (i = 1) then
+			wait;
+		end if;
+	end process;
+
+	-- Testing output
+	tb1: process
+		begin
+			-- Making all values are at 0 when starting
+			-- S1 = U, S2 = U; (internal signals) Y (DATA_OUT) = U;
+			DATA_IN <= '0';
+			EN <= '0';
+			wait for period;
+			assert (DATA_OUT = 'U')
+			report "test failed for Startup" severity error;
+
+			-- Now Start
+			-- S1 = 0, S2 = U, Y = U
+			EN <= '1';
+			wait for period;
+			assert (DATA_OUT = 'U')
+			report "test failed for first value" severity error;
+						
+			DATA_IN <= '1';
+			wait for period;
+			assert (DATA_OUT = 'U')
+			report "test failed for first on input" severity error;
+			
+			-- S1 = 1, S2 = 0, Y = U
+			wait for period;
+			assert (DATA_OUT = 'U')
+			report "test failed for rise of CLK" severity error;
+
+			DATA_IN <= '0';
+			wait for period;
+			assert (DATA_OUT = 'U')
+			report "test failed for second off" severity error;
+
+			-- S1 = 0, S2 = 1, Y = 0;
+			wait for period;
+			assert (DATA_OUT = '0')
+			report "test failed on output of first variable" severity error;
+			
+			wait for period;
+			assert (DATA_OUT = '0')
+			report "test failed on low of first variable" severity error;
+			
+			-- S1 = 0, S2 = 0, Y = 1;
+			wait for period;
+			assert (DATA_OUT = '1')
+			report "test failed on output of second variable" severity error;
+
+			wait for period;
+			assert (DATA_OUT = '1')
+			report "test failed on low of second variable" severity error; 
+
+			-- S1 = 0, S2 = 0, Y = 0;
+			wait for period;
+			assert (DATA_OUT = '0')
+			report "test failed on output of third variable" severity error;
+			
+			EN <= '0';
+			wait for period;
+			assert (DATA_OUT = '0')
+			report "test failed on low of third variable" severity error;
+			
+			i <= 1;
+
+			wait;
+		end process;
+END v1;
