@@ -1,0 +1,211 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath
+Ebig_mux_4
+Z1 w1614423615
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\big_mux_4.vhd
+Z6 FC:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\big_mux_4.vhd
+l0
+L5
+V<E`^Fh0=@0GBX:;V<A3b`0
+!s100 ^>=SYOMm3HiccejBe3fPJ0
+Z7 OV;C;10.5b;63
+31
+Z8 !s110 1616170469
+!i10b 1
+Z9 !s108 1616170469.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\big_mux_4.vhd|
+Z11 !s107 C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\big_mux_4.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+DEx4 work 9 big_mux_4 0 22 <E`^Fh0=@0GBX:;V<A3b`0
+l21
+L19
+V:DYJSQSd:<aB81Wm[jEZT3
+!s100 Xl4gd60=O:[K7=f96dQ@D3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Econstant_literal
+R1
+R3
+R4
+R0
+Z14 8C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\constant_literal.vhd
+Z15 FC:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\constant_literal.vhd
+l0
+L43
+VnbRY8HWReG=CcW_RL7Ga]1
+!s100 4[B:=B<lR3=kW=6eb=3]e3
+R7
+31
+Z16 !s110 1616170470
+!i10b 1
+Z17 !s108 1616170470.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\constant_literal.vhd|
+Z19 !s107 C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\constant_literal.vhd|
+!i113 1
+R12
+R13
+Asyn
+R3
+R4
+DEx4 work 16 constant_literal 0 22 nbRY8HWReG=CcW_RL7Ga]1
+l69
+L51
+V<Q1dL^C9FA3O8JW]@ld?l0
+!s100 h^i2<:7SA9o]Y]5NWc`ci0
+R7
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R12
+R13
+Econtrollerdatapath_vhd
+R1
+R3
+R4
+R0
+Z20 8C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\ControllerDatapath_vhd.vhd
+Z21 FC:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\ControllerDatapath_vhd.vhd
+l0
+L25
+VMK?Lk9ALlo:JlJKDmVjem0
+!s100 i8OQ:LG58Kh;dUOHbO_i00
+R7
+31
+R16
+!i10b 1
+R17
+Z22 !s90 -reportprogress|300|-93|-work|work|C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\ControllerDatapath_vhd.vhd|
+Z23 !s107 C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\ControllerDatapath_vhd.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R3
+R4
+DEx4 work 22 controllerdatapath_vhd 0 22 MK?Lk9ALlo:JlJKDmVjem0
+l94
+L44
+VN5i[JUUG:2Qg>65C0XMMc0
+!s100 3QzhHM6nESY>iZFLahQV<3
+R7
+31
+R16
+!i10b 1
+R17
+R22
+R23
+!i113 1
+R12
+R13
+Esimplereg
+R1
+R2
+R3
+R4
+R0
+Z24 8C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\simplereg.vhd
+Z25 FC:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\simplereg.vhd
+l0
+L7
+VlhbESgCaInY6T6b6n8?^=2
+!s100 G7?IPkH2>Nb7<ASMDD:b`0
+R7
+31
+R16
+!i10b 1
+R17
+Z26 !s90 -reportprogress|300|-93|-work|work|C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\simplereg.vhd|
+Z27 !s107 C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\simplereg.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 9 simplereg 0 22 lhbESgCaInY6T6b6n8?^=2
+l22
+L20
+VoQbDFX0_kjEZbNWgn=Fid0
+!s100 LVA=@ol`giZ5iC196d>J53
+R7
+31
+R16
+!i10b 1
+R17
+R26
+R27
+!i113 1
+R12
+R13
+Eunsigned_adder_b
+R1
+R2
+R3
+R4
+R0
+Z28 8C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\unsigned_adder_b.vhd
+Z29 FC:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\unsigned_adder_b.vhd
+l0
+L5
+V=YozdFCLho?26BQ>CCzcl3
+!s100 18BDEzU2fALBhY2d9T54Z1
+R7
+31
+R16
+!i10b 1
+R17
+Z30 !s90 -reportprogress|300|-93|-work|work|C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\unsigned_adder_b.vhd|
+Z31 !s107 C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\unsigned_adder_b.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 16 unsigned_adder_b 0 22 =YozdFCLho?26BQ>CCzcl3
+l22
+L21
+VdZm:FS96Q4gZGn>OICU8L2
+!s100 XM?8D5mA8`dn8VDh0G?[m1
+R7
+31
+R16
+!i10b 1
+R17
+R30
+R31
+!i113 1
+R12
+R13

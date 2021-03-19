@@ -1,17 +1,17 @@
-vsim work.controllerdatapath_vhd_tst
+vsim work.ControllerDatapath_vhd
 
 add wave -position insertpoint  \
-sim:/controllerdatapath_vhd_tst/ACC \
-sim:/controllerdatapath_vhd_tst/CLK \
-sim:/controllerdatapath_vhd_tst/DATA \
-sim:/controllerdatapath_vhd_tst/EN_ACC \
-sim:/controllerdatapath_vhd_tst/EN_R1 \
-sim:/controllerdatapath_vhd_tst/EN_R2 \
-sim:/controllerdatapath_vhd_tst/R1 \
-sim:/controllerdatapath_vhd_tst/R2 \
-sim:/controllerdatapath_vhd_tst/RESET \
-sim:/controllerdatapath_vhd_tst/SEL_ACC \
-sim:/controllerdatapath_vhd_tst/SEL_R1 \
-sim:/controllerdatapath_vhd_tst/SEL_R2 \
-sim:/controllerdatapath_vhd_tst/SEL_SUM
+sim:/ControllerDatapath_vhd/ACC \
+sim:/ControllerDatapath_vhd/CLK \
+sim:/ControllerDatapath_vhd/DATA \
+sim:/ControllerDatapath_vhd/EN_ACC \
+sim:/ControllerDatapath_vhd/EN_R1 \
+sim:/ControllerDatapath_vhd/EN_R2 \
+sim:/ControllerDatapath_vhd/R1 \
+sim:/ControllerDatapath_vhd/R2 \
+sim:/ControllerDatapath_vhd/RESET \
+sim:/ControllerDatapath_vhd/SEL_ACC \
+sim:/ControllerDatapath_vhd/SEL_R1 \
+sim:/ControllerDatapath_vhd/SEL_R2 \
+sim:/ControllerDatapath_vhd/SEL_SUM
 
