@@ -1,0 +1,189 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ACC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ACC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "R2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "R2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "R2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "R2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "R2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "R2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "R2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "R2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_ACC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_ACC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_SUM[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_SUM[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				},
+				{
+					"name" : "EN_ACC",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_R1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_R1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "EN_R1",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_R2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SEL_R2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "EN_R2",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
