@@ -50,7 +50,9 @@ SIGNAL SEL_R1 : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL SEL_R2 : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL SEL_SUM : STD_LOGIC_VECTOR(1 DOWNTO 0);
 
+-- Variable For RESET 
 signal i : integer := 0;
+-- Object for time period for Testing
 constant period : time := 20 ps;
 
 COMPONENT ControllerDatapath_vhd
@@ -95,6 +97,8 @@ BEGIN
         WAIT;                                           
 END PROCESS init;                                           
 
+
+-- Here is our process block for our RESET pin for our device. (Only runs once):
 process
 begin
 	if (i = 0) then
