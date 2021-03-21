@@ -103,7 +103,6 @@ begin
 		RESET <= '0';
 		i <= 1;
 	end if;
-	wait;
 end process; 
                                           
 always : PROCESS                                              
