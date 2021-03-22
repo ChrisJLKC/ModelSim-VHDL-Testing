@@ -90,35 +90,40 @@ BEGIN
 	SEL_R2 => SEL_R2,
 	SEL_SUM => SEL_SUM
 	);
-
-init : PROCESS                                               
--- variable declarations                                     
-BEGIN                                                        
-        WAIT;                                           
-END PROCESS init;                                           
-
-
+                                    
 -- Here is our process block for our RESET pin for our device. (Only runs once):
-process
-begin
-	if (i = 0) then
-		RESET <= '1';
-		wait for period;
-		RESET <= '0';
-		i <= 1;
-	end if;
-	wait;
-end process; 
-                                          
-always : PROCESS                                              
--- optional sensitivity list                                  
--- (        )                                                 
--- variable declarations                                      
-BEGIN                                                         
-	wait for period;
-	wait for period;
-	WAIT;                                                        
-END PROCESS always;  
+PRO_RES : PROCESS
+BEGIN
+	RESET <= '1';
+	WAIT FOR period;
+	RESET <= '0';
+	
+	WAIT;
+END PROCESS PRO_RES; 
 
-                                        
+-- Here is our process block for our CLK pin for our device. (Runs until i = 1):
+PRO_CLK : PROCESS
+BEGIN
+	CLK <= '1';
+	WAIT FOR period;
+	CLK <= '0';
+	WAIT FOR period;
+
+	IF (i = 1) THEN
+		WAIT;
+	END IF;
+END PROCESS PRO_CLK;
+
+-- Here we detail what we want it to do, for testing:
+PRO_MAIN : PROCESS
+BEGIN
+	-- Something Here~~~~~~~~
+	
+	-- Detailing i is equal to 1, to stop CLK:
+	i <= 1;
+	
+	WAIT;
+END PROCESS PRO_MAIN;
+	 
+                                                                               
 END ControllerDatapath_vhd_arch;
