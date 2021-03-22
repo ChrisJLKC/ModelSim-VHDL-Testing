@@ -50,11 +50,12 @@ SIGNAL SEL_R1 : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL SEL_R2 : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL SEL_SUM : STD_LOGIC_VECTOR(1 DOWNTO 0);
 
--- Variable For RESET 
-signal i : integer := 0;
--- Object for time period for Testing
+-- Variable For CLK:
+signal CLK_STOP : integer := 0;
+
+-- Testing timers:
 constant period : time := 20 ps;
-constant wait_period : time := 10 ps;
+constant RES_period : time := 10 ps;
 
 COMPONENT ControllerDatapath_vhd
 	PORT (
@@ -76,7 +77,7 @@ END COMPONENT;
 BEGIN
 	i1 : ControllerDatapath_vhd
 	PORT MAP (
--- list connections between master ports and signals
+	-- list connections between master ports and signals
 	ACC => ACC,
 	CLK => CLK,
 	DATA => DATA,
@@ -96,7 +97,7 @@ BEGIN
 	PRO_RES : PROCESS
 	BEGIN
 		RESET <= '1';
-		WAIT FOR wait_period;
+		WAIT FOR RES_period;
 		RESET <= '0';
 	
 		WAIT;
@@ -111,7 +112,7 @@ BEGIN
 		WAIT FOR period;
 
 		-- Stops CLK:
-		IF (i = 1) THEN
+		IF (CLK_STOP = 1) THEN
 			WAIT;
 		END IF;
 	END PROCESS PRO_CLK;
@@ -119,18 +120,16 @@ BEGIN
 	-- Here we detail what we want it to do, for testing:
 	PRO_MAIN : PROCESS
 	BEGIN
-		report "Started";
 		-- To start, we will start loading R1 pin with a value:
-		
 		WAIT UNTIL FALLING_EDGE(CLK);
 		DATA <= "00000010";
-		SEL_R1 <= "10";
+		SEL_R1 <= "00";
 		EN_R1 <= '1';
 		WAIT UNTIL RISING_EDGE(CLK);
 			
-		WAIT FOR wait_period;
+		WAIT FOR period;
 
-		i <= 1;
+		CLK_STOP <= 1;
 
 		WAIT;
 	END PROCESS PRO_MAIN;
