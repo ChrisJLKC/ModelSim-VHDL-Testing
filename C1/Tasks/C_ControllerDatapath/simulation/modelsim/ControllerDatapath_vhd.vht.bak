@@ -124,7 +124,7 @@ BEGIN
 		
 		WAIT UNTIL FALLING_EDGE(CLK);
 		DATA <= "00000010";
-		SEL_R1 <= "10";
+		SEL_R1 <= "00";
 		EN_R1 <= '1';
 		WAIT UNTIL RISING_EDGE(CLK);
 			
