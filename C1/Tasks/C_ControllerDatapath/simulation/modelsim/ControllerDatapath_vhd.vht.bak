@@ -36,14 +36,14 @@ END ControllerDatapath_vhd_tst;
 ARCHITECTURE ControllerDatapath_vhd_arch OF ControllerDatapath_vhd_tst IS
 -- constants                                                 
 -- signals                                                   
-SIGNAL ACC : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL ACC : STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000000";
 SIGNAL CLK : STD_LOGIC;
 SIGNAL DATA : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL EN_ACC : STD_LOGIC;
 SIGNAL EN_R1 : STD_LOGIC;
 SIGNAL EN_R2 : STD_LOGIC;
-SIGNAL R1 : STD_LOGIC_VECTOR(7 DOWNTO 0);
-SIGNAL R2 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+SIGNAL R1 : STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000000";
+SIGNAL R2 : STD_LOGIC_VECTOR(7 DOWNTO 0) := "00000000";
 SIGNAL RESET : STD_LOGIC;
 SIGNAL SEL_ACC : STD_LOGIC_VECTOR(1 DOWNTO 0);
 SIGNAL SEL_R1 : STD_LOGIC_VECTOR(1 DOWNTO 0);
@@ -139,7 +139,7 @@ BEGIN
 		REPORT "Test failed in assigned ACC with R1" severity error;
 
 		-- Adding R1 to ACC:
-		ACC <= unsigned(ACC + R1);
+		ACC <= ACC + R1;
 		WAIT FOR period;
 		ASSERT (ACC = "00000010")
 		REPORT "Test failed in addition with ACC and R1" severity error;
@@ -153,13 +153,13 @@ BEGIN
 		-- Assigning ACC to "00100000":
 		R1 <= "00100000";
 		R2 <= R1;
-		ACC <= unsigned(ACC) + unsigned(R2);
+		ACC <= ACC + R2;
 		WAIT FOR period;
 		ASSERT (ACC = "00100000")
 		REPORT "Test failed in assigning ACC with 00100000" severity error;
 
 		-- Calculating multiple added binary inputs:	
-		ACC <= unsigned("00000001") + unsigned("00000001") + unsigned("10000000") + unsigned("01000000") + unsigned("00000001") + unsigned("00100000");
+		ACC <= "00000001" + "00000001" + "10000000" + "01000000" + "00000001" + "00100000";
 		WAIT FOR period;
 		ASSERT (ACC = "11100011")
 		REPORT "Test failed in calculating ACC" severity error;
