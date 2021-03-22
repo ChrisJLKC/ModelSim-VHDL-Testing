@@ -9,5 +9,6 @@ vcom -93 -work work {C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\
 vcom -93 -work work {C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\simplereg.vhd}
 vcom -93 -work work {C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\unsigned_adder_b.vhd}
 vcom -93 -work work {C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\constant_literal.vhd}
+vcom -93 -work work {C:\git\ModelSim-VHDL-Testing\C1\Tasks\C_ControllerDatapath\ControllerDatapath_vhd.vhd}
 
 do "C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/build.do"
