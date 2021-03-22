@@ -54,6 +54,7 @@ SIGNAL SEL_SUM : STD_LOGIC_VECTOR(1 DOWNTO 0);
 signal i : integer := 0;
 -- Object for time period for Testing
 constant period : time := 20 ps;
+constant wait_period : time := 5 ps;
 
 COMPONENT ControllerDatapath_vhd
 	PORT (
@@ -118,55 +119,18 @@ BEGIN
 	-- Here we detail what we want it to do, for testing:
 	PRO_MAIN : PROCESS
 	BEGIN
+		report "Srarted";
 		-- To start, we will start loading R1 pin with a value:
-		R1 <= "00000010";
-		WAIT FOR period;
-	
-		-- Now assigning value above to R2:
-		R2 <= R1;
-		WAIT FOR period;
-		ASSERT (R2 = "00000010")
-		REPORT "Test failed in assigning R1 with R2" severity error;
+		WAIT UNTIL FALLING_EDGE(CLK);
+		DATA <= "00000010";
+		SEL_R1 <= "01";
+		EN_R1 <= '1';
+		WAIT UNTIL RISING_EDGE(CLK);
+			
+		WAIT FOR wait_period;
 
-		-- Now Loading pin ACC with a binary value:
-		ACC <= "00000001";
-		WAIT FOR period;
-
-		-- Now assigning value above to R1:
-		R1 <= ACC;
-		WAIT FOR period;
-		ASSERT (R1 = "00000001")
-		REPORT "Test failed in assigned ACC with R1" severity error;
-
-		-- Adding R1 to ACC:
-		ACC <= ACC + R1;
-		WAIT FOR period;
-		ASSERT (ACC = "00000010")
-		REPORT "Test failed in addition with ACC and R1" severity error;
-		
-		-- Assigning pins again:
-		R1 <= "01000000";
-		R2 <= "00000000";
-		ACC <= "00000001";
-		WAIT FOR period;
-
-		-- Assigning ACC to "00100000":
-		R1 <= "00100000";
-		R2 <= R1;
-		ACC <= ACC + R2;
-		WAIT FOR period;
-		ASSERT (ACC = "00100000")
-		REPORT "Test failed in assigning ACC with 00100000" severity error;
-
-		-- Calculating multiple added binary inputs:	
-		ACC <= "00000001" + "00000001" + "10000000" + "01000000" + "00000001" + "00100000";
-		WAIT FOR period;
-		ASSERT (ACC = "11100011")
-		REPORT "Test failed in calculating ACC" severity error;
-
-		-- Detailing i is equal to 1, to stop CLK:
 		i <= 1;
-	
+
 		WAIT;
 	END PROCESS PRO_MAIN;
 	                                                                              
