@@ -7,33 +7,33 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath
+dC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath
 Ebig_mux_4
-Z1 w1614423615
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
-Z5 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/big_mux_4.vhd
-Z6 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/big_mux_4.vhd
+Z0 w1614781648
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath
+Z5 8C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/big_mux_4.vhd
+Z6 FC:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/big_mux_4.vhd
 l0
 L5
 V<jz_kQ@@^CDe<J757]zFS2
 !s100 ^>=SYOMm3HiccejBe3fPJ0
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1616431651
+Z8 !s110 1616488576
 !i10b 1
-Z9 !s108 1616431651.000000
-Z10 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/big_mux_4.vhd|
-Z11 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/big_mux_4.vhd|
+Z9 !s108 1616488575.000000
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/big_mux_4.vhd|
+Z11 !s107 C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/big_mux_4.vhd|
 !i113 1
 Z12 o-work work
 Z13 tExplicit 1 CvgOpt 0
 Artl
+R1
 R2
 R3
-R4
 DEx4 work 9 big_mux_4 0 22 <jz_kQ@@^CDe<J757]zFS2
 l21
 L19
@@ -50,12 +50,12 @@ R11
 R12
 R13
 Econstant_literal
-R1
+R0
+R2
 R3
 R4
-R0
-Z14 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/constant_literal.vhd
-Z15 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/constant_literal.vhd
+Z14 8C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/constant_literal.vhd
+Z15 FC:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/constant_literal.vhd
 l0
 L43
 V8;j@Xn]j5]O<Y[SNoJ`Qz0
@@ -64,15 +64,15 @@ R7
 32
 R8
 !i10b 1
-R9
-Z16 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/constant_literal.vhd|
-Z17 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/constant_literal.vhd|
+Z16 !s108 1616488576.000000
+Z17 !s90 -reportprogress|300|-work|work|C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/constant_literal.vhd|
+Z18 !s107 C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/constant_literal.vhd|
 !i113 1
 R12
 R13
 Asyn
+R2
 R3
-R4
 DEx4 work 16 constant_literal 0 22 8;j@Xn]j5]O<Y[SNoJ`Qz0
 l69
 L51
@@ -82,19 +82,19 @@ R7
 32
 R8
 !i10b 1
-R9
 R16
 R17
+R18
 !i113 1
 R12
 R13
 Econtrollerdatapath_vhd
-R1
+R0
+R2
 R3
 R4
-R0
-Z18 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/ControllerDatapath_vhd.vhd
-Z19 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/ControllerDatapath_vhd.vhd
+Z19 8C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/ControllerDatapath_vhd.vhd
+Z20 FC:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/ControllerDatapath_vhd.vhd
 l0
 L25
 V[Y6IUD=gjRT?c<E?Q`^VK1
@@ -103,15 +103,15 @@ R7
 32
 R8
 !i10b 1
-R9
-Z20 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/ControllerDatapath_vhd.vhd|
-Z21 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/ControllerDatapath_vhd.vhd|
+R16
+Z21 !s90 -reportprogress|300|-work|work|C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/ControllerDatapath_vhd.vhd|
+Z22 !s107 C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/ControllerDatapath_vhd.vhd|
 !i113 1
 R12
 R13
 Abdf_type
+R2
 R3
-R4
 DEx4 work 22 controllerdatapath_vhd 0 22 [Y6IUD=gjRT?c<E?Q`^VK1
 l94
 L44
@@ -121,61 +121,61 @@ R7
 32
 R8
 !i10b 1
-R9
-R20
+R16
 R21
+R22
 !i113 1
 R12
 R13
 Econtrollerdatapath_vhd_tst
-Z22 w1616442351
+Z23 w1616498873
+R1
 R2
 R3
 R4
-R0
-Z23 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht
-Z24 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht
+Z24 8C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht
+Z25 FC:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht
 l0
 L34
 V<3>`XRPXSI;4ldbZKCeLz3
 !s100 j3dFm>HkmbnDI1l3RD6kU3
 R7
 32
-Z25 !s110 1616443007
+Z26 !s110 1616499564
 !i10b 1
-Z26 !s108 1616443007.000000
-Z27 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht|
-Z28 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht|
+Z27 !s108 1616499564.000000
+Z28 !s90 -reportprogress|300|-work|work|C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht|
+Z29 !s107 C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht|
 !i113 1
 R12
 R13
 Acontrollerdatapath_vhd_arch
+R1
 R2
 R3
-R4
-Z29 DEx4 work 26 controllerdatapath_vhd_tst 0 22 <3>`XRPXSI;4ldbZKCeLz3
-l77
+Z30 DEx4 work 26 controllerdatapath_vhd_tst 0 22 <3>`XRPXSI;4ldbZKCeLz3
+l78
 L36
-Z30 VjZ4^fnFG1H;X;IiGNh7aZ1
-Z31 !s100 1oaje_oLmEGYQKEYVec7M2
+Z31 VE=Ad[;i`_YL41lF3fneFa3
+Z32 !s100 2T@OR_R320EY7dV6J6>F`3
 R7
 32
-R25
-!i10b 1
 R26
+!i10b 1
 R27
 R28
+R29
 !i113 1
 R12
 R13
 Esimplereg
+R0
 R1
 R2
 R3
 R4
-R0
-Z32 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd
-Z33 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd
+Z33 8C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd
+Z34 FC:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd
 l0
 L7
 VBZPeP:CNC=RmKa1mA4=P@1
@@ -184,16 +184,16 @@ R7
 32
 R8
 !i10b 1
-R9
-Z34 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd|
-Z35 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd|
+R16
+Z35 !s90 -reportprogress|300|-work|work|C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd|
+Z36 !s107 C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd|
 !i113 1
 R12
 R13
 Artl
+R1
 R2
 R3
-R4
 DEx4 work 9 simplereg 0 22 BZPeP:CNC=RmKa1mA4=P@1
 l22
 L20
@@ -203,20 +203,20 @@ R7
 32
 R8
 !i10b 1
-R9
-R34
+R16
 R35
+R36
 !i113 1
 R12
 R13
 Eunsigned_adder_b
+R0
 R1
 R2
 R3
 R4
-R0
-Z36 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd
-Z37 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd
+Z37 8C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd
+Z38 FC:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd
 l0
 L5
 Vg6RG=@K2JV9PWcf?A]OQi3
@@ -225,16 +225,16 @@ R7
 32
 R8
 !i10b 1
-R9
-Z38 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd|
-Z39 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd|
+R16
+Z39 !s90 -reportprogress|300|-work|work|C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd|
+Z40 !s107 C:/Users/Christopher Jenner/Documents/GitHub/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd|
 !i113 1
 R12
 R13
 Artl
+R1
 R2
 R3
-R4
 DEx4 work 16 unsigned_adder_b 0 22 g6RG=@K2JV9PWcf?A]OQi3
 l22
 L21
@@ -244,9 +244,9 @@ R7
 32
 R8
 !i10b 1
-R9
-R38
+R16
 R39
+R40
 !i113 1
 R12
 R13

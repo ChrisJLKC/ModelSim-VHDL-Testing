@@ -56,6 +56,7 @@ signal CLK_STOP : integer := 0;
 -- Testing timers:
 constant period : time := 20 ps;
 constant RES_period : time := 10 ps;
+constant Val_period : time := 5 ps;
 
 COMPONENT ControllerDatapath_vhd
 	PORT (
@@ -96,9 +97,9 @@ BEGIN
 	-- Here is our process block for our RESET pin for our device. (Only runs once):
 	PRO_RES : PROCESS
 	BEGIN
-		RESET <= '1';
-		WAIT FOR RES_period;
 		RESET <= '0';
+		WAIT FOR RES_period;
+		RESET <= '1';
 	
 		WAIT;
 	END PROCESS PRO_RES; 
@@ -124,13 +125,59 @@ BEGIN
 		WAIT UNTIL FALLING_EDGE(CLK);
 		DATA <= "00000010";
 		SEL_R1 <= "00";
-		SEL_R2 <= "00";
 		EN_R1 <= '1';
+		WAIT UNTIL RISING_EDGE(CLK);
+		EN_R1 <= '0';
+		WAIT FOR Val_period;
+		ASSERT (R1 = "00000010")
+		REPORT "Test Failed on Loading R1" SEVERITY ERROR;
+
+		-- Then Load the value of R1 into R2:
+		WAIT UNTIL FALLING_EDGE(CLK);
+		DATA <= R1;
+		SEL_R2 <= "00";
 		EN_R2 <= '1';
 		WAIT UNTIL RISING_EDGE(CLK);
-			
-		WAIT FOR period;
+		EN_R2 <= '0';
+		WAIT FOR Val_period;
+		ASSERT ((R2 = "00000010") and (R1 = "00000010"))
+		REPORT "Test Failed on Loading R1 value to R2" SEVERITY ERROR;
 
+		-- Loading a value to out pin ACC:
+		WAIT UNTIL FALLING_EDGE(CLK);
+		DATA <= "00000001";
+		SEL_ACC <= "00";
+		EN_ACC <= '1';
+		WAIT UNTIL RISING_EDGE(CLK);
+		EN_ACC <= '0';
+		WAIT FOR Val_period;
+		ASSERT ((ACC = "00000001") and (R1 = "00000010") and (R2 = "00000010"))
+		REPORT "Test Failed on Loading ACC" SEVERITY ERROR;
+
+		WAIT UNTIL FALLING_EDGE(CLK);
+		DATA <= ACC;
+		SEL_R1 <= "00";
+		EN_R1 <= '1';
+		WAIT UNTIL RISING_EDGE(CLK);
+		EN_R1 <= '0';
+	 	WAIT FOR Val_period;
+	 	ASSERT ((ACC = "00000001") and (R1 = "00000001") and (R2 = "00000010"))
+		REPORT "Test Failed on loading value of ACC to R1" SEVERITY ERROR;
+
+		WAIT UNTIL FALLING_EDGE(CLK);
+		-- Selecting the output of R1:
+		SEL_SUM <= "01";
+		-- Then we are associating the sum with ACC:
+		SEL_ACC <= "11";
+		EN_ACC <= '1';
+		WAIT UNTIL RISING_EDGE(CLK);
+		EN_ACC <= '0';
+		WAIT FOR Val_period;
+		ASSERT ((ACC = "00000010") and (R1 = "00000001") and (R2 = "00000010"))
+		REPORT "Test Failed on loading the summation of ACC and R1" SEVERITY ERROR;
+
+		
+	 
 		CLK_STOP <= 1;
 
 		WAIT;
