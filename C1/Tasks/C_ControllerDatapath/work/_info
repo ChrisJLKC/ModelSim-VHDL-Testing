@@ -128,7 +128,7 @@ R22
 R12
 R13
 Econtrollerdatapath_vhd_tst
-Z23 w1616514206
+Z23 w1616515084
 R2
 R3
 R4
@@ -141,9 +141,9 @@ V<3>`XRPXSI;4ldbZKCeLz3
 !s100 j3dFm>HkmbnDI1l3RD6kU3
 R7
 32
-Z26 !s110 1616514209
+Z26 !s110 1616515121
 !i10b 1
-Z27 !s108 1616514209.000000
+Z27 !s108 1616515121.000000
 Z28 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht|
 Z29 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simulation/modelsim/ControllerDatapath_vhd.vht|
 !i113 1
@@ -156,8 +156,8 @@ R4
 Z30 DEx4 work 26 controllerdatapath_vhd_tst 0 22 <3>`XRPXSI;4ldbZKCeLz3
 l78
 L36
-V]Y1JFzJRPgoS<`U4I@hSf2
-!s100 T?l7UCVznkNg<L=GE0CfX2
+Z31 VWZYcL4>8RThFTQQ;U>KS@2
+Z32 !s100 KV59za?5m=4BH:<PT`@c:2
 R7
 32
 R26
@@ -174,8 +174,8 @@ R2
 R3
 R4
 R0
-Z31 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd
-Z32 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd
+Z33 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd
+Z34 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd
 l0
 L7
 VBZPeP:CNC=RmKa1mA4=P@1
@@ -185,8 +185,8 @@ R7
 R8
 !i10b 1
 R9
-Z33 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd|
-Z34 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd|
+Z35 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd|
+Z36 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/simplereg.vhd|
 !i113 1
 R12
 R13
@@ -204,8 +204,8 @@ R7
 R8
 !i10b 1
 R9
-R33
-R34
+R35
+R36
 !i113 1
 R12
 R13
@@ -215,8 +215,8 @@ R2
 R3
 R4
 R0
-Z35 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd
-Z36 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd
+Z37 8C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd
+Z38 FC:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd
 l0
 L5
 Vg6RG=@K2JV9PWcf?A]OQi3
@@ -226,8 +226,8 @@ R7
 R8
 !i10b 1
 R9
-Z37 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd|
-Z38 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd|
+Z39 !s90 -reportprogress|300|-work|work|C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd|
+Z40 !s107 C:/git/ModelSim-VHDL-Testing/C1/Tasks/C_ControllerDatapath/unsigned_adder_b.vhd|
 !i113 1
 R12
 R13
@@ -245,8 +245,8 @@ R7
 R8
 !i10b 1
 R9
-R37
-R38
+R39
+R40
 !i113 1
 R12
 R13
