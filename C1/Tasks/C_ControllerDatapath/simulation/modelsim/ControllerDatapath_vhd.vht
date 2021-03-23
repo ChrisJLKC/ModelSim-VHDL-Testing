@@ -127,6 +127,7 @@ BEGIN
 		SEL_R1 <= "00";
 		EN_R1 <= '1';
 		WAIT UNTIL RISING_EDGE(CLK);
+		-- Switching off enable pins to hold the value:
 		EN_R1 <= '0';
 		WAIT FOR Val_period;
 		ASSERT (R1 = "00000010")
@@ -178,6 +179,51 @@ BEGIN
 		ASSERT ((ACC = "00000010") and (R1 = "00000001") and (R2 = "00000010"))
 		REPORT "Test Failed on loading the summation of ACC and R1" SEVERITY ERROR;
 
+		-- Calculating all 3 out pins at once with previous values:
+		WAIT UNTIL FALLING_EDGE(CLK);
+		-- Value of R1 using DATA:
+		DATA <= "01000000";
+		SEL_R1 <= "00";
+		EN_R1 <= '1';
+		
+		-- Value of R2 using the ZERO pin on multiplexer:
+		SEL_R2 <= "11";
+		EN_R2 <= '1';
+
+		-- Value of ACC using the value of R1 from the last CLK cycle:
+		SEL_ACC <= "01";
+		EN_ACC <= '1';
+		WAIT UNTIL RISING_EDGE(CLK);
+		EN_R1 <= '0';
+		EN_R2 <= '0';
+		EN_ACC <= '0';
+		WAIT FOR Val_period;
+		ASSERT ((ACC = "00000001") and (R1 = "01000000") and (R2 = "00000000"))
+		REPORT "Test Failed on assigning ACC, R1 and R2 at the sametime" SEVERITY ERROR;
+
+		-- Doing a Summation of all 3 out pins:
+		WAIT UNTIL FALLING_EDGE(CLK);
+		-- Then summing ACC and R2 together:
+		SEL_SUM <= "10";
+		SEL_ACC <= "11";
+		EN_ACC <= '1';
+
+		-- Then saying R2 is equal to R1:
+		SEL_R2 <= "01";
+		EN_R2 <= '1';
+
+		-- Setting value of R1:
+		DATA <= "00100000";
+		SEL_R1 <= "00";
+		EN_R1 <= '1';
+
+		WAIT UNTIL FALLING_EDGE(CLK);
+		EN_ACC <= '0';
+		EN_R2 <= '0';
+		EN_R1 <= '0';
+		WAIT FOR Val_period;
+		ASSERT ((ACC = "00000001") and (R1 = "00100000") and (R2 = "01000000"))
+		REPORT "Test failed for summation of second ACC calculation" SEVERITY ERROR;	
 		
 	 
 		CLK_STOP <= 1;
