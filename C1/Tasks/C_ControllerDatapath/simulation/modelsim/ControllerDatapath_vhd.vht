@@ -217,15 +217,75 @@ BEGIN
 		SEL_R1 <= "00";
 		EN_R1 <= '1';
 
-		WAIT UNTIL FALLING_EDGE(CLK);
+		WAIT UNTIL RISING_EDGE(CLK);
 		EN_ACC <= '0';
 		EN_R2 <= '0';
 		EN_R1 <= '0';
 		WAIT FOR Val_period;
 		ASSERT ((ACC = "00000001") and (R1 = "00100000") and (R2 = "01000000"))
 		REPORT "Test failed for summation of second ACC calculation" SEVERITY ERROR;	
+
+		-- Solving a multiple summation with multiple CLK cycles:
+		WAIT UNTIL FALLING_EDGE(CLK);
+		-- Setting DATA:
+		DATA <= "00000001";
 		
-	 
+		-- Then Summing the two values togther (00000001 and 00000001):
+		SEL_SUM <= "00";
+		SEL_ACC <= "11";
+		EN_ACC <= '1';
+		WAIT UNTIL RISING_EDGE(CLK);
+
+		WAIT FOR Val_period;
+		
+		WAIT UNTIL FALLING_EDGE(CLK);
+		-- Setting DATA:
+		DATA <= "10000000";
+		
+		-- Then Summing the two values togther (10000000 and 00000010):
+		SEL_SUM <= "00";
+		SEL_ACC <= "11";
+		WAIT UNTIL RISING_EDGE(CLK);
+
+		WAIT FOR Val_period;
+
+		WAIT UNTIL FALLING_EDGE(CLK);
+		-- Setting DATA:
+		DATA <= R2;
+		
+		-- Then Summing the two values togther (01000000 and 10000010):
+		SEL_SUM <= "00";
+		SEL_ACC <= "11";
+		WAIT UNTIL RISING_EDGE(CLK);
+
+		WAIT FOR Val_period;
+
+	        WAIT UNTIL FALLING_EDGE(CLK);
+		-- Setting DATA:
+		DATA <= "10000000";
+		
+		-- Then Summing the two values togther (10000000 and 11000010):
+		SEL_SUM <= "00";
+		SEL_ACC <= "11";
+		WAIT UNTIL RISING_EDGE(CLK);
+
+		WAIT FOR Val_period;
+
+		WAIT UNTIL FALLING_EDGE(CLK);
+		-- Setting DATA:
+		DATA <= R1;
+		
+		-- Then Summing the two values togther (00100000 and 01000010):
+		SEL_SUM <= "00";
+		SEL_ACC <= "11";
+		WAIT UNTIL RISING_EDGE(CLK);
+		EN_ACC <= '0';
+		
+		WAIT FOR Val_period;
+		
+		ASSERT ((ACC = "01100010") and (R1 = "00100000") and (R2 = "01000000"))
+		REPORT "Test failed for multiple summation" SEVERITY ERROR;
+		
 		CLK_STOP <= 1;
 
 		WAIT;
