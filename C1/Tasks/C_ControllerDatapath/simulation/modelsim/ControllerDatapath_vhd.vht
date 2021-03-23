@@ -94,7 +94,7 @@ BEGIN
 	SEL_SUM => SEL_SUM
 	);
                                     
-	-- Here is our process block for our RESET pin for our device. (Only runs once):
+	-- Here is our process block for our RESET pin for our device. This is an active low reset (Only runs once):
 	PRO_RES : PROCESS
 	BEGIN
 		RESET <= '0';
